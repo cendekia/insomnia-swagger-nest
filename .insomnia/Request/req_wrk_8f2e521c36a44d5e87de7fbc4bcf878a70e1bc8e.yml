@@ -1,0 +1,21 @@
+_id: req_wrk_8f2e521c36a44d5e87de7fbc4bcf878a70e1bc8e
+type: Request
+parentId: fld_wrk_8f2e521c36a44d5e87de7fbc4bcf878a57f2b181
+modified: 1676817403200
+created: 1676817403200
+url: "{{ base_url }}/users"
+name: /users [GET] Get all users
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1676817403200
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

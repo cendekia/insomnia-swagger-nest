@@ -1,0 +1,25 @@
+_id: req_wrk_8f2e521c36a44d5e87de7fbc4bcf878a907884a6
+type: Request
+parentId: fld_wrk_8f2e521c36a44d5e87de7fbc4bcf878a57f2b181
+modified: 1676817403194
+created: 1676817403194
+url: "{{ base_url }}/users/{{ id }}"
+name: /users/:id [PATCH] Update a user by id
+description: ""
+method: PATCH
+body:
+  mimeType: application/json
+  text: "{}"
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1676817403194
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

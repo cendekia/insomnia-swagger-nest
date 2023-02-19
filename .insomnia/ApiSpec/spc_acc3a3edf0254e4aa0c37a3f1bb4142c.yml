@@ -1,0 +1,123 @@
+_id: spc_acc3a3edf0254e4aa0c37a3f1bb4142c
+type: ApiSpec
+parentId: wrk_8f2e521c36a44d5e87de7fbc4bcf878a
+modified: 1676817403214
+created: 1676817247163
+fileName: Insomnia NestJS
+contents: |-
+  openapi: 3.0.0
+  paths:
+    /:
+      get:
+        operationId: AppController_getHello
+        parameters: []
+        responses:
+          '200':
+            description: ''
+    /users:
+      post:
+        operationId: UsersController_create
+        summary: /users [POST] Create a new user
+        description: Create a new user
+        parameters: []
+        requestBody:
+          required: true
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CreateUserDto'
+        responses:
+          '201':
+            description: ''
+        tags: &ref_0
+          - Users
+      get:
+        operationId: UsersController_findAll
+        summary: /users [GET] Get all users
+        description: Get all users
+        parameters: []
+        responses:
+          '200':
+            description: ''
+        tags: *ref_0
+    /users/{id}:
+      get:
+        operationId: UsersController_findOne
+        summary: /users/:id [GET] Get a user by id
+        description: Get a user by id
+        parameters:
+          - name: id
+            required: true
+            in: path
+            schema:
+              type: string
+        responses:
+          '200':
+            description: ''
+        tags: *ref_0
+      patch:
+        operationId: UsersController_update
+        summary: /users/:id [PATCH] Update a user by id
+        description: Update a user by id
+        parameters:
+          - name: id
+            required: true
+            in: path
+            schema:
+              type: string
+        requestBody:
+          required: true
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UpdateUserDto'
+        responses:
+          '200':
+            description: ''
+        tags: *ref_0
+      delete:
+        operationId: UsersController_remove
+        summary: /users/:id [DELETE] Delete a user by id
+        description: Delete a user by id
+        parameters:
+          - name: id
+            required: true
+            in: path
+            schema:
+              type: string
+        responses:
+          '200':
+            description: ''
+        tags: *ref_0
+  info:
+    title: Insonmia Swagger NestJS
+    description: Insonmia Swagger NestJS description
+    version: '1.0'
+    contact: {}
+  tags:
+    - name: Users
+      description: ''
+  servers:
+    - url: http://localhost:3000
+  components:
+    schemas:
+      CreateUserDto:
+        type: object
+        properties:
+          name:
+            type: string
+            default: John Doe
+          email:
+            type: string
+            default: john.doe@test.com
+          password:
+            type: string
+            default: Qwerty!23
+        required:
+          - name
+          - email
+          - password
+      UpdateUserDto:
+        type: object
+        properties: {}
+contentType: yaml
