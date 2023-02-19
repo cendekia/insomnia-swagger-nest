@@ -1,0 +1,30 @@
+_id: req_wrk_8f2e521c36a44d5e87de7fbc4bcf878aa1bffc1c
+type: Request
+parentId: fld_wrk_8f2e521c36a44d5e87de7fbc4bcf878a57f2b181
+modified: 1676817403201
+created: 1676817403201
+url: "{{ base_url }}/users"
+name: /users [POST] Create a new user
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "name": "John Doe",
+      "email": "john.doe@test.com",
+      "password": "Qwerty!23"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1676817403201
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
